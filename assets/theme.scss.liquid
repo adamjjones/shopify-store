@@ -1592,7 +1592,7 @@ $class-type: unquote(".");
 html, body {
   padding: 0;
   margin: 0;
-  background-color: #000000 ;
+  background-color: $colorBody ;
   &.js {
      .no-js {
        display: block;
@@ -1758,6 +1758,7 @@ h6 { font-size: 1em; } // 15px
 .main-content {
   h1, h2, h3, h4, h5 {
     color: $colorHeaders;
+    word-wrap: break-word;
   }
 }
 
@@ -3194,7 +3195,7 @@ $shareBorderColor: #ececec;
 .site-nav {
   display: none;
   margin: 0;
-  text-align: left;
+  text-align: center;
   margin-left: -$gutter/2;
   font-family: $accentFontStack;
   font-weight: $accentFontWeight;
